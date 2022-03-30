@@ -1,0 +1,28 @@
+programa
+{	
+	funcao inicio()
+	{
+		inteiro C
+		real S, N, E, SE
+		
+		escreva("Código do Colaborador? ")
+		leia(C)
+		escreva("Número de Horas Trabalhadas? ")
+		leia(N)
+		
+		se (N >= 50){
+			S = N * 10
+			E = N - 50
+			SE = E * 20
+			escreva("Salário Total: R$", S)
+			escreva("\nSalário Excedente: R$", SE)
+		}
+		senao{			
+			E = 0.0
+			S = 0.0
+			N = 0.0
+			SE = 0.0
+			E = 0.0
+		}
+	}
+}

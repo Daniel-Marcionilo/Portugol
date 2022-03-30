@@ -1,0 +1,33 @@
+programa
+{
+
+// Exercício 5
+/*Faça um sistema que leia as 3 notas de um aluno e calcule a média final deste
+aluno. Considerar que a média é ponderada e que o peso das notas é: 2,3 e 5,
+respectivamente.*/
+
+	funcao inicio()
+	{
+		inteiro a, b, c, d, ex, f, x , y
+
+		escreva("Digite a: ")
+		leia(a)
+		escreva("\nDigite b: ")
+		leia(b)
+		escreva("\nDigite c: ")
+		leia(c)
+		escreva("\nDigite d: ")
+		leia(d)
+		escreva("\nDigite e: ")
+		leia(ex)
+		escreva("\nDigite f: ")
+		leia(f)
+
+		x = ((c*ex) - (b*f)) / ((a*ex) - (b*d))
+
+		y = ((a*f) - (c*d)) / ((a*ex) - (b*d))
+
+		escreva("\nx =  ", x, " y = ", y)
+		
+	}
+}

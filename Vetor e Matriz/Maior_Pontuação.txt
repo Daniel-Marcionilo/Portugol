@@ -1,0 +1,32 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro vetor[5], maior
+
+		para(inteiro cont=0;cont<5;cont++)
+		{
+			escreva("Digite a ",cont+1," ° pontuação: ")
+			leia(vetor[cont])
+		}
+		limpa()
+		maior = vetor[0]
+
+		escreva("Valores informados: ")
+		para(inteiro cont=0;cont<5;cont++)
+		{
+			escreva(vetor[cont], ",")
+
+			se(cont == 4){
+				escreva(vetor[cont], ".")
+			}
+			
+			se(vetor[cont] > maior){
+				maior = vetor[cont]
+			}
+		}
+
+		escreva("\n\nMaior pontuação = ", maior, "\n\n")
+	}
+}

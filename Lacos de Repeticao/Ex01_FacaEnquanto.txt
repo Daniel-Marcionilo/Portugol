@@ -1,0 +1,16 @@
+	programa
+{
+	funcao inicio()
+	{
+		inteiro x = 233
+
+		faca{
+			escreva(x, "\n")
+			x+=5
+
+			se(x >300 e x < 400){
+				x-=2
+			}
+		}enquanto(x <= 456)
+	}
+}

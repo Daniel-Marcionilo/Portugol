@@ -1,0 +1,14 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro x
+
+		leia(x)
+
+		enquanto(x <= 100){
+			x = x * 3
+			escreva(x, "\n")
+		}
+	}
+}

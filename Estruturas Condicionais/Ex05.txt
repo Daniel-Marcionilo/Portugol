@@ -1,0 +1,26 @@
+programa
+{	
+	funcao inicio()
+	{
+		inteiro idade
+		
+		escreva("Digite sua idade: ")
+		leia(idade)
+		
+		se (idade >= 5 e idade <= 7){
+			escreva("\nInfantil A = 5 a 7 anos\n")
+		}
+		se (idade >= 8 e idade <= 11){
+			escreva("\nInfantil B = 8 a 11 anos\n")
+		}
+		se (idade >= 12 e idade <= 13){
+			escreva("\nJuvenil A = 12 a 13 anos\n")
+		}
+		se (idade >= 14 e idade <= 17){
+			escreva("\nJuvenil B = 14 a 17 anos\n")
+		}
+		se (idade >= 18){
+			escreva("\nAdultos = Maiores de 18 anos\n")
+		}	
+	}
+}

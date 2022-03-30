@@ -1,0 +1,17 @@
+programa
+{
+	/*Desenvolver um sistema que efetue a soma de todos os números ímpares que são
+múltiplos de três e que se encontram no conjunto dos números de 1 até 500.*/
+
+	funcao inicio()
+	{
+		inteiro somaImpar = 0
+		
+		para(inteiro i = 1; i <= 500; i+=2){
+			se(i%2==1 e i%3==0){
+				somaImpar += i	
+			}			
+		}
+		escreva("Somatória dos números ímpares de 1 até 500 é = ", somaImpar, "\n")
+	}
+}

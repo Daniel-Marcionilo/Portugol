@@ -1,0 +1,31 @@
+programa
+{
+	funcao inicio()
+	{
+		real s, ts = 0.0, maiorS = 0.0
+		inteiro f = 0, tf = 0, p = 0
+		
+		para(inteiro i = 1; i <= 20; i++){
+			escreva("\nDigite o seu salário: ")
+			leia(s)
+			escreva("\nQuantos filhos você tem? ")
+			leia(f)		
+
+			se(s <= 100){
+				p += 1 	
+			}
+
+			se(maiorS < s){
+				maiorS = s
+			}
+			
+			ts += s
+			tf += f
+		}
+		escreva("\nMédia do salário da população = ", ts/20, "\n")
+		escreva("\nMédia do número de filhos = ", tf/20, "\n")
+		escreva("\nMaior salário ", maiorS, "\n")
+		escreva("\nPercentual de pessoas com salário até R$100,00 ", (p*100)/20, "%\n\n")
+		
+	}
+}

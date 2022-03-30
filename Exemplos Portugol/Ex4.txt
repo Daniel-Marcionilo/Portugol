@@ -1,0 +1,27 @@
+programa
+{
+	
+// Exercício 4 
+	/*Escreva um sistema que leia três números inteiros e positivos (A, B, C) e
+	calcule a seguinte expressão:*/
+	funcao inicio()
+	{
+		inteiro A, B, C, D, R, S
+		
+		escreva("Digite A: ")
+		leia(A)
+		escreva("Digite B: ")
+		leia(B)
+		escreva("Digite C: ")
+		leia(C)
+
+		R = (A + B) * (A + B)
+		S = (B + C) * (B + C)
+		D = (R + S) / 2
+
+		escreva("Resultado de R = ", R)
+		escreva("\nResultado de S = ", S)
+		escreva("\nResultado de D = ", D)
+		
+	}
+}

@@ -1,0 +1,46 @@
+programa
+{
+	inclua biblioteca Util --> u
+	
+	funcao inicio()
+	{
+		inteiro lcto[10], qtdeMaior = 0, maior, nSorteado = 0, soma = 0, media = 0	
+
+		para(inteiro cont=0;cont<10;cont++)
+		{
+			nSorteado = u.sorteia(1, 6)
+			lcto[cont] = nSorteado
+			soma = soma + lcto[cont]
+		}
+		
+		media = soma/10
+		
+		escreva("\n\nValores informados: [")
+
+		maior = lcto[0]
+		para(inteiro cont2=0;cont2<10;cont2++)
+		{
+			se(cont2 == 9){
+				escreva(lcto[cont2],"]")
+			}
+			senao
+			{
+				escreva(lcto[cont2],", ")
+			}
+
+			se(lcto[cont2] > maior){
+				maior = lcto[cont2]
+			}
+		}
+
+		para(inteiro cont=0;cont<10;cont++)
+		{
+			se(lcto[cont] == maior){
+				qtdeMaior++
+			}
+		}
+
+		escreva("\n\nQuantas vezes a maior pontuação apareceu? ", qtdeMaior)
+		escreva("\n\nMédia Aritmética = ", media, "\n")
+	}
+}

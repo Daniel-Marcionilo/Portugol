@@ -1,0 +1,27 @@
+programa
+{	
+	funcao inicio()
+	{
+		inteiro n
+		cadeia POS = "POSITIVO", NEG = "NEGATIVO"			
+		escreva("Digite um número: ")
+		leia(n)
+		
+		se (n % 2 == 0){
+			se(n > 0){
+				escreva("O número ", n, " é PAR e ", POS)
+			}
+			senao{
+				escreva("O número ", n, " é PAR e ", NEG)
+			}
+		}
+		senao{
+			se(n > 0){			
+				escreva("O número ", n, " é ÍMPAR e ", POS)
+			}
+			senao{
+				escreva("O número ", n, " é ÍMPAR e ", NEG)
+			}
+		}
+	}
+}

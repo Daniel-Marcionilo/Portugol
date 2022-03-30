@@ -1,0 +1,23 @@
+programa
+{	
+	funcao inicio()
+	{
+		real P, M, E
+
+		P = 0.0
+		M = 0.0
+		E = 0.0
+		
+		escreva("Peso? ")
+		leia(P)
+		se (P > 50){
+			E = P - 50
+			M = E * 4.0
+
+			escreva("João deverá pagar: R$", M)
+		}
+		senao{
+			escreva("Multa = ", M, " Excesso = ", E)
+		}
+	}
+}
